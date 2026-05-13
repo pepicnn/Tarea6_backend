@@ -50,7 +50,7 @@ const obtenerTodosLosUsuarios = async (req, res) => {
     // TODO: Paso 1 - Llamar al servicio obtenerTodosLosUsuarios()
     // TODO: Paso 2 - Retornar los usuarios con sendSuccess()
 
-    const usuarios = usuarioService.obtenerTodosLosUsuarios();     // llamada a la funcion que obtiene todos los usuarios.
+    const usuarios = await usuarioService.obtenerTodosLosUsuarios();     // llamada a la funcion que obtiene todos los usuarios.
     return sendSuccess(res,usuarios, 'Usuarios obtenidos');     // respuesta con los usuarios obtenidos
 
     return sendError(res, 'Endpoint no implementado', 501);

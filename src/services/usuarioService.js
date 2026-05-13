@@ -26,9 +26,9 @@ const obtenerTodosLosUsuarios = async () => {
   // TODO: Implementar la obtención de todos los usuarios
   // Ayudita: Usa usuarioRepository.find()
 
-  const usuarios = await obtenerTodosLosUsuarios();
-
-
+  const usuarios = await usuarioRepository.find();
+  return usuarios;
+  
   return [];
 };
 
