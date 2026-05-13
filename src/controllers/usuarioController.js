@@ -75,9 +75,9 @@ const obtenerUsuarioPorId = async (req, res) => {
 
     if(!usuario){                                        // si usuario no existe, osea es null, vacio, undefined, 0 o false   
       return sendError(res, 'Usuario no encontrado', 404);
-    }else {                                                     // caso contrario usuario existe 
-      return sendSuccess(res, usuario, 'Usuario encontrado');
-    }
+    }                                              // caso contrario usuario existe 
+    return sendSuccess(res, usuario, 'Usuario encontrado');
+    
 
 
 
